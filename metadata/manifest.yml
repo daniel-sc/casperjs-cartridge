@@ -9,7 +9,7 @@ License: ASL 2.0
 Vendor: http://github.com/n1k0/casperjs
 Source-Url: git@github.com:daniel-sc/casperjs-cartridge.git
 Cartridge-Version: 0.0.1
-Cartridge-Vendor: daniel-sc
+Cartridge-Vendor: danielschreiber
 Categories:
 - embedded
 - casperjs
