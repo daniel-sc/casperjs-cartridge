@@ -31,4 +31,11 @@ esac
 echo "install script."
 mkdir -p install-dir-casperjs
 
+#TODO
+#export PHANTOMJS_EXECUTABLE
+echo "submodule init.."
+git submodule init
+echo "submodule update.."
+git submodule update
+
 exit 0
