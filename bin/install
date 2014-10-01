@@ -8,24 +8,27 @@ case "$1" in
     version="$2"
 esac
 
-source $OPENSHIFT_MOCK_DIR/mock.conf
+#source $OPENSHIFT_MOCK_DIR/mock.conf
 
-mkdir -p $MOCK_STATE
-touch $MOCK_STATE/install_called
+#mkdir -p $MOCK_STATE
+#touch $MOCK_STATE/install_called
 
-function error_exit {
-  echo -e "$1\nexit $2" >$MOCK_STATE/install_failure
-  echo -e $1 1>&2
-  exit $2
-}
+#function error_exit {
+#  echo -e "$1\nexit $2" >$MOCK_STATE/install_failure
+#  echo -e $1 1>&2
+#  exit $2
+#}
 
-if [[ -n "$version" ]]; then
-  echo "Creating version marker for $version"
-  echo "$version" > $MOCK_STATE/install_version
-else
-  echo "Skipping version creation marker."
-fi
+#if [[ -n "$version" ]]; then
+#  echo "Creating version marker for $version"
+#  echo "$version" > $MOCK_STATE/install_version
+#else
+#  echo "Skipping version creation marker."
+#fi
 
-touch $MOCK_STATE/install_succeed
+#touch $MOCK_STATE/install_succeed
+
+echo "install script."
+mkdir -p install-dir-casperjs
 
 exit 0
