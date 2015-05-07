@@ -11,3 +11,4 @@ SSH into your gear and check if its working:
 `echo $OPENSHIFT_CASPERJS_BIN_DIR`casperjs --version
 `echo $PHANTOMJS_EXECUTABLE` -v
 ```
+(You might need to restart the app to have the environment variables available)
